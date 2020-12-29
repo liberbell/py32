@@ -9,4 +9,9 @@ def index(request):
                            <html>
                            <head>
                              <title></title>
-                           </head>)
+                           </head>
+                           <body>
+                           Welcome to Django page.
+                           </body>
+                           </html>
+                        """)
