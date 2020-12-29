@@ -11,7 +11,7 @@ def index(request):
                              <title></title>
                            </head>
                            <body>
-                           Welcome to Django page.
+                           Welcome to Django page2.
                            </body>
                            </html>
                         """)
