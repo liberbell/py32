@@ -7,4 +7,4 @@ def index(request):
     return render(request, 'blog/index.html')
 
 def business(request):
-    return render(request,)
+    return render(request, 'blog/business.html')
