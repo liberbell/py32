@@ -5,3 +5,6 @@ from django.http import HttpResponse
 def index(request):
     # return HttpResponse("Welcome to Django page.")
     return render(request, 'blog/index.html')
+
+def business(request):
+    return render(request,)
