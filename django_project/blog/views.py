@@ -6,5 +6,12 @@ def index(request):
     # return HttpResponse("Welcome to Django page.")
     return render(request, 'blog/index.html')
 
+posts =[
+    {'author' : 'django1',
+    'title': 'Blog Post1',
+    'content' : 'First post content',
+    'date_posted' : 'December 31, 2020'
+    }
+]
 def business(request):
     return render(request, 'blog/business.html')
