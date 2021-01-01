@@ -20,3 +20,8 @@ posts =[
 ]
 def business(request):
     return render(request, 'blog/business.html')
+
+def business(request):
+    context = {
+        'posts' : posts
+    }
