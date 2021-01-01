@@ -12,16 +12,19 @@ Business Blog
 </head>
 
 <section>
-    <div class="media-body">
-        <div class="list-group">
-            <a href="#"> {{ post.author }}</a>
-            <small> {{post.date_posted }}</small>
-        </div>
-        <h2><a href="#">{{ post.title }}</a></h2>
     {% for post in posts %}
-    <h1>{{ post.title }}</h1>
-    <p>By {{ post.author }} on {{ post.date_posted }}</p>
-    <p>{{ post.content }}</p>
+        <div class="list-group">
+            <article>
+                <div class="media-body">
+                    <div class="list-group">
+                        <a href="#"> {{ post.author }}</a>
+                        <small> {{post.date_posted }}</small>
+                    </div>
+                    <h2><a href="#">{{ post.title }}</a></h2>
+                    <p>{{ post.content }}</p>
+                </div>
+            </article>
+        </div>
     {% endfor %}
 </section>
 
