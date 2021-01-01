@@ -18,8 +18,8 @@ posts =[
     'date_posted' : 'January 1, 2021'
     }
 ]
-def business(request):
-    return render(request, 'blog/business.html')
+# def business(request):
+#     return render(request, 'blog/business.html')
 
 def business(request):
     context = {
