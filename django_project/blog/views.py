@@ -24,6 +24,6 @@ posts =[
 
 def business(request):
     context = {
-        'posts' : posts
+        'posts' : Post.objects.all()
     }
     return render(request, 'blog/business.html', context)
