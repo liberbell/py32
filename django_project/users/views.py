@@ -7,3 +7,6 @@ def register(request):
     # return render(request, 'users/register.html', {'form': form})
     if request.method == "POST":
         form = UserCreationForm(request.Post)
+
+    else:
+        form = UserCreationForm()
