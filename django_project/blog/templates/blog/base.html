@@ -41,7 +41,11 @@
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <main role='main' class="container">
-    
+    <div class="row">
+         {% if message %}
+             {% for message in messages %}
+             <div class="alert alert-{{ message.tags }}">"
+             {% endfor %}
     {% block content %}
 
     {% endblock content %}
