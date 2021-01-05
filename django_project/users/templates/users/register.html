@@ -1,23 +1,23 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-<div class="container">
-    <form method="POST">
-        {% csrf_token %}
-        <fieldset class="form-group">
-            <legend>Join Now!</legend>
-            {{ form.as_p }} 
-        </fieldset>
-        <div class="form-group">
-            <button type="submit">Sign up</button>
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend>Join Now!</legend>
+                {{ form.as_p }} 
+            </fieldset>
+            <div class="form-group">
+                <button type="submit">Sign up</button>
+            </div>
+        </form>
+        <div>
+            <small>
+                Already have an account? <a href="#">Sign in</a>
+            </small>
         </div>
-    </form>
-    <div>
-        <small>
-            Already have an account? <a href="#">Sign in</a>
-        </small>
     </div>
-</div>
 {% endblock content %}
 
 {% block footer %}
