@@ -6,7 +6,7 @@
         <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
-                <ledgend>Join now!</ledgend>
+                <ledgend>Log in</ledgend>
                 {{ form|crispy }}
             </fieldset>
             <div class="form-group">
@@ -15,7 +15,7 @@
         </form>
         <div>
             <small>
-                Already have an account? <a href="#">Sign in</a>
+                Need an account? <a href="{% url 'register' %}">Sign up</a>
             <small>
         </div>
     </div>
