@@ -32,10 +32,17 @@
           <a class="navbar-brand" href="/">Django Blog</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-            <form class="navbar-form navbar-right" role="form">
-                <a class="btn btn-success" href="{% url 'login' %}" role="button">Sign in</a>
-                <a class="btn btn-success" href="{% url 'register' %}" role="button">Register</a>
-            </form>
+            {% if user.is_authenticated %}
+              <form class="navbar-form navbar-right" role="form">
+                  <a class="btn btn-success" href="{% url 'logout' %}" role="button">Sign in</a>
+              </form>
+
+            {% else %}
+                <form class="navbar-form navbar-right" role="form">
+                    <a class="btn btn-success" href="{% url 'login' %}" role="button">Sign in</a>
+                    <a class="btn btn-success" href="{% url 'register' %}" role="button">Register</a>
+                </form>
+            {% endif %}
         </div><!--/.navbar-collapse -->
       </div>
     </nav>
