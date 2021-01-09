@@ -13,6 +13,7 @@ Welcom
       </div>
     </div>
 
+    {% if user.is_authenticated %}
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
@@ -32,6 +33,10 @@ Welcom
           <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
         </div>
       </div>
+      {% else %}
+        <div class="container">
+
+      {% endif %}
 
       <hr>
 {% endblock content %}
