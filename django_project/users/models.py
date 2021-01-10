@@ -7,5 +7,4 @@ class Profile(models.Model):
     image = models.ImageField(default='default.jpeg', upload_to='profile_')
 
     def __str__(self):
-        return self.name
-    
+        return f'{self.user.username} Profile'
