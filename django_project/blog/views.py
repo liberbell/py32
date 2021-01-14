@@ -14,3 +14,7 @@ def business(request):
         'posts' : Post.objects.all()
     }
     return render(request, 'blog/business.html', context)
+
+class PostListView(ListView):
+    model = Post
+    template_name = 'blog/business.html'
