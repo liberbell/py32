@@ -14,7 +14,7 @@ urlpatterns = [
     path('logout', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
     path('profile', user_view.profile, name='profile'),
     path('post/<int:pk>', PostDetailView.as_view(), name='post-detail'),
-    path('post/new', PostDetailView.as_view(), name='post-create'),
+    path('post/new/', PostDetailView.as_view(), name='post-create'),
 ]
 
 if settings.DEBUG:
