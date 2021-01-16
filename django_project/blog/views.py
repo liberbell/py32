@@ -33,3 +33,5 @@ class PostCreateView(CreateView):
         return super().form_valid(form)
 
 class PostUpdateView(UpdateView):
+    model = Post
+    fields = ['title', 'content']
