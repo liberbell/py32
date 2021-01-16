@@ -29,16 +29,9 @@ Business Blog
 </section>
 
 <section class="container">
-    <form action="" method="post">
-        <p>
-            Please submit your Blog :
-            <input type="text" name="url">
-        </p>
-        <p>
-            <button type="submit">Submit</button>
-        </p>
-
-    </form>
+    <div>
+        <section>
+            <a href="{% url 'post-create' %}">Click here to create new post</a>
 </section>
 {% endblock content %}
 
