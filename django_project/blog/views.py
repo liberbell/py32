@@ -52,8 +52,8 @@ class PostDeleteView(UserPassesTestMixin, DeleteView):
     model = Post
 
     def test_func(self):
-    post = self.get_object()
-    if self.request.user == post.author:
-        return True
-    else:
-        return False
+        post = self.get_object()
+        if self.request.user == post.author:
+            return True
+        else:
+            return False
