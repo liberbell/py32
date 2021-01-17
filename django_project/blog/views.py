@@ -46,3 +46,7 @@ class PostUpdateView(UserPassesTestMixin, UpdateView):
             return True
         else:
             return False
+
+
+class PostDeleteView(UserPassesTestMixin, DeleteView):
+    model = Post
