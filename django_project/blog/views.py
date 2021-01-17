@@ -35,3 +35,6 @@ class PostCreateView(CreateView):
 class PostUpdateView(UpdateView):
     model = Post
     fields = ['title', 'content']
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user
