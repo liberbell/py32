@@ -6,7 +6,7 @@
         {% csrf_token %}
         <fieldset>
             <ledgend>Delete Post</ledgend>
-            <h4>Are you sure you want to delete post "{{% url 'post-delete' %}}"?</h4>
+            <h4>Are you sure you want to delete post "{{ object.title }}"?</h4>
         <fieldset>
         <div>
             <button class="btn btn-danger" type="submit">Yes, Delete</button>
