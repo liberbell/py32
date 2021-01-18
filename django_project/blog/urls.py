@@ -6,6 +6,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from .views import PostListView, PostDetailView, PostCreateView, PostUpdateView, PostDeleteView
 from django.views.generic.dates import ArchiveIndexView
+from blog.models import Post
 
 urlpatterns = [
     path('', views.index, name="index"),
