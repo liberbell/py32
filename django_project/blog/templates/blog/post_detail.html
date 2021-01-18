@@ -11,6 +11,12 @@
             <h2>{{ object.title }}</h2>
             <p>{{ object.content }}</p>
         </div>
+        {% if object.author == user %}
+            <div>
+                <a class="btn btn-default " href="{% url 'post-update' object.id %}">Update</a>
+                <a class="btn btn-default " href="{% url 'post-delete' object.id %}">Delete</a>
+            </div>
+        {% endif %}
     </article>
 </div>
 {% endblock content %}
