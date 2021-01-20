@@ -10,7 +10,7 @@ Archive Blog
     <section>
         <div>
             <h1>All articles for {{ year|date:"Y" }}</h1>
-            {% for obj in object.list %}
+            {% for obj in object_list %}
                 <p>
                     <li>{{ obj.tilte }} - {{ obj.date_posted|date:"F j, Y" }}</li>
                 </p>
