@@ -13,49 +13,8 @@ Business Blog
     <h4>Amazing Blogs</h4>
     <p>A blog is a disccusion or informational website published on the World Wide Web
        consisting of discrete, often informal diary-style text entries (posts).
-
-</section>
-
-<section class="container">
-    <div>
-        <section>
-            <a href="{% url 'post-create' %}">Click here to create new post</a>
-        </section>
-    </div>
-</section>
-{% endblock content %}
-
-{% block content %}
-<!doctype html>
-<html>
-<head lang='en'>
-    <title>Business Blog</title>
-</head>
-
-<section class="container">
-    {% for post in posts %}
-        <div class="list-group">
-            <article>
-                <div class="media-body">
-                    <div class="list-group">
-                        <a href="#"> {{ post.author }}</a>
-                        <small> {{post.date_posted }}</small>
-                    </div>
-                    <h2><a href="{% url 'post-detail' post.id %}">{{ post.title }}</a></h2>
-                    <p>{{ post.content }}</p>
-                </div>
-            </article>
-        </div>
-    {% endfor %}
-</section>
-
-<section class="container">
-    <div>
-        <section>
-            <a href="{% url 'post-create' %}">Click here to create new post</a>
-        </section>
-    </div>
-</section>
+    </p>
+</div>
 {% endblock content %}
 
 {% block footer %}
