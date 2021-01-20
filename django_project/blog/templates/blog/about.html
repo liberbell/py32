@@ -5,13 +5,11 @@ Business Blog
 {% endblock title %}
 
 {% block content %}
-<!doctype html>
-<html>
-<head lang='en'>
-    <title>Business Blog</title>
-</head>
+<div class="container">
+    <img src="/static/blog/img/images.jpeg" class="rounded">
+</div>
 
-<section class="container">
+<div class="container">
     {% for post in posts %}
         <div class="list-group">
             <article>
