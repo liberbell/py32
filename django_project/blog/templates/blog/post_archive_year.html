@@ -13,5 +13,13 @@ Archive Blog
             {% for obj in object.list %}
                 <p>
                     <li>{{ obj.tilte }} - {{ obj.datde_posted|date:"F J, Y" }}</li>
+                </p>
             {% endfor %}
+        </div>
+    
+    </section>
+</div>
 {% endblock content %}
+
+{% block footer %}
+{% endblock footer %}
