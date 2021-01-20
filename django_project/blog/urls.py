@@ -20,6 +20,7 @@ urlpatterns = [
     path('post/<int:pk>/update', PostUpdateView.as_view(), name='post-update'),
     path('post/<int:pk>/delete', PostDeleteView.as_view(), name='post-delete'),
     path('archive/', ArchiveIndexView.as_view(model=Post, date_field="date_posted"), name="post_archive"),
+    path('<int:pk>/', PostYearArchiveView.as_view(), name="post_year_archive"),
 ]
 
 if settings.DEBUG:
